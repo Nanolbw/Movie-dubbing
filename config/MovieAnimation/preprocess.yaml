@@ -1,0 +1,36 @@
+dataset: "MovieAnimation"
+
+path:
+  corpus_path: "/media/qichen/ea3763ef-ce45-4f0b-bf4c-646ca3ffa4d3/dataset/V2C/MovieAnimation"
+  lexicon_path: "lexicon/librispeech-lexicon.txt"
+  raw_path: "/media/qichen/ea3763ef-ce45-4f0b-bf4c-646ca3ffa4d3/dataset/V2C/MovieAnimation"
+  preprocessed_path: "./preprocessed_data/MovieAnimation"
+
+preprocessing:
+  val_size: 512
+  text:
+    text_cleaners: ["english_cleaners"]
+    language: "en"
+  audio:
+    sampling_rate: 22050
+    max_wav_value: 32768.0
+  stft:
+    filter_length: 1024
+    hop_length: 256
+    win_length: 1024
+  mel:
+    n_mel_channels: 80
+    mel_fmin: 0
+    mel_fmax: 8000 # please set to 8000 for HiFi-GAN vocoder, set to null for MelGAN vocoder
+  pitch:
+    feature: "phoneme_level" # support 'phoneme_level' or 'frame_level'
+    normalization: True
+  energy:
+    feature: "phoneme_level" # support 'phoneme_level' or 'frame_level'
+    normalization: True
+  emotion:
+    n_emotion: 8
+
+# last_n_speaker: 904 # number of speakers on the last dataset
+last_n_speaker: 0 # number of speakers on the last dataset
+with_gt: False # when generating speech by synthesize.py, whether synthesize gt as well
