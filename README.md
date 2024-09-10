@@ -1,8 +1,5 @@
 
-# V2C - PyTorch Implementation
 
-This is a PyTorch implementation of [**V2C: Visual Voice Cloning**](https://openaccess.thecvf.com/content/CVPR2022/papers/Chen_V2C_Visual_Voice_Cloning_CVPR_2022_paper.pdf). 
-This project is based on [FastSpeech2](https://github.com/ming024/FastSpeech2). Feel free to use/modify the code.
 
 
 # Dependencies
