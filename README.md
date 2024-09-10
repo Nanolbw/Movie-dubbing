@@ -87,20 +87,6 @@ The loss curves, mcd curves, synthesized mel-spectrograms, and audios are shown.
 
 
 
-# References
-- [FastSpeech 2: Fast and High-Quality End-to-End Text to Speech](https://arxiv.org/abs/2006.04558), Y. Ren, *et al*.
-- [FastSpeech 2 implementation](https://github.com/ming024/FastSpeech2)
-
-# Citation
-```
-@inproceedings{chen2022v2c,
-  title={V2C: Visual Voice Cloning},
-  author={Chen, Qi and Tan, Mingkui and Qi, Yuankai and Zhou, Jiaqiu and Li, Yuanqing and Wu, Qi},
-  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
-  pages={21242--21251},
-  year={2022}
-}
-
 ```
 
 
